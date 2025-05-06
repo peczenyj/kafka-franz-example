@@ -1,5 +1,5 @@
 === RUN   TestMinimal
-2025/05/04 09:12:42 github.com/testcontainers/testcontainers-go - Connected to docker: 
+2025/05/06 08:22:53 github.com/testcontainers/testcontainers-go - Connected to docker: 
   Server Version: 28.1.1
   API Version: 1.48
   Operating System: Ubuntu 24.04.2 LTS
@@ -7,137 +7,138 @@
   Testcontainers for Go Version: v0.37.0
   Resolved Docker Host: unix:///var/run/docker.sock
   Resolved Docker Socket Path: /var/run/docker.sock
-  Test SessionID: 227b6ca41e8846a39f67b6b2da0ea96ee770298de4828fb77ddca22aa109d43d
-  Test ProcessID: bb4eb1d3-427c-4f7d-9aea-5970aa01fcfb
+  Test SessionID: 14c4f01e3252d6accbcfb04f45e6cfdd6f0039ca85f489d8e44e615c16ac7bf1
+  Test ProcessID: c9b576c8-d96d-4cdd-98a5-3ec25ca5f3a3
     lifecycle.go:79: 🐳 Creating container for image docker.redpanda.com/redpandadata/redpanda:v23.3.3
     lifecycle.go:79: 🐳 Creating container for image testcontainers/ryuk:0.11.0
-    lifecycle.go:85: ✅ Container created: 417d08bc7ff2
-    lifecycle.go:91: 🐳 Starting container: 417d08bc7ff2
-    lifecycle.go:97: ✅ Container started: 417d08bc7ff2
-    lifecycle.go:287: ⏳ Waiting for container id 417d08bc7ff2 image: testcontainers/ryuk:0.11.0. Waiting for: &{Port:8080/tcp timeout:<nil> PollInterval:100ms skipInternalCheck:false}
-    lifecycle.go:103: 🔔 Container is ready: 417d08bc7ff2
-    lifecycle.go:85: ✅ Container created: 8c10383322cc
-    lifecycle.go:91: 🐳 Starting container: 8c10383322cc
-    lifecycle.go:97: ✅ Container started: 8c10383322cc
-    lifecycle.go:287: ⏳ Waiting for container id 8c10383322cc image: docker.redpanda.com/redpandadata/redpanda:v23.3.3. Waiting for: &{timeout:<nil> deadline:<nil> Strategies:[0xc00042c120 0xc00042c150 0xc00042c180]}
-    lifecycle.go:103: 🔔 Container is ready: 8c10383322cc
-2025/05/04 09:12:44 INFO immediate metadata update triggered why="querying metadata for consumer initialization"
-2025/05/04 09:12:44 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) addr=localhost:36341 broker=seed_0 err=EOF
+    lifecycle.go:85: ✅ Container created: c1c25d9d32ae
+    lifecycle.go:91: 🐳 Starting container: c1c25d9d32ae
+    lifecycle.go:97: ✅ Container started: c1c25d9d32ae
+    lifecycle.go:287: ⏳ Waiting for container id c1c25d9d32ae image: testcontainers/ryuk:0.11.0. Waiting for: &{Port:8080/tcp timeout:<nil> PollInterval:100ms skipInternalCheck:false}
+    lifecycle.go:103: 🔔 Container is ready: c1c25d9d32ae
+    lifecycle.go:85: ✅ Container created: 9c77c6e410fc
+    lifecycle.go:91: 🐳 Starting container: 9c77c6e410fc
+    lifecycle.go:97: ✅ Container started: 9c77c6e410fc
+    lifecycle.go:287: ⏳ Waiting for container id 9c77c6e410fc image: docker.redpanda.com/redpandadata/redpanda:v23.3.3. Waiting for: &{timeout:<nil> deadline:<nil> Strategies:[0xc0000c35c0 0xc0000c35f0 0xc0000c3650]}
+    lifecycle.go:103: 🔔 Container is ready: 9c77c6e410fc
+2025/05/06 08:22:55 INFO immediate metadata update triggered why="querying metadata for consumer initialization"
+2025/05/06 08:22:55 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) req=ApiVersions addr=localhost:36357 broker=seed_0 err=EOF
     example_test.go:73: client pint return error: broker closed the connection immediately after a request was issued, which happens when SASL is required but not provided: is SASL missing?, closing...
-2025/05/04 09:12:44 INFO assigning partitions why="invalidating all assignments in LeaveGroup" how="unassigning everything" input=""
-2025/05/04 09:12:44 INFO leaving group group=foo-bar member_id=""
-2025/05/04 09:12:44 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) addr=localhost:36341 broker=seed_0 err=EOF
-2025/05/04 09:12:45 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) addr=localhost:36341 broker=seed_0 err=EOF
-2025/05/04 09:12:45 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) addr=localhost:36341 broker=seed_0 err=EOF
-2025/05/04 09:12:45 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) addr=localhost:36341 broker=seed_0 err=EOF
-2025/05/04 09:12:45 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) addr=localhost:36341 broker=seed_0 err=EOF
-2025/05/04 09:12:45 INFO metadata update triggered why="re-updating metadata due to err: broker closed the connection immediately after a request was issued, which happens when SASL is required but not provided: is SASL missing?"
-2025/05/04 09:12:45 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) addr=localhost:36341 broker=seed_0 err=EOF
-2025/05/04 09:12:45 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) addr=localhost:36341 broker=seed_0 err=EOF
-2025/05/04 09:12:46 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) addr=localhost:36341 broker=seed_0 err=EOF
-2025/05/04 09:12:46 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) addr=localhost:36341 broker=seed_0 err=EOF
-2025/05/04 09:12:47 INFO metadata update triggered why="re-updating metadata due to err: broker closed the connection immediately after a request was issued, which happens when SASL is required but not provided: is SASL missing?"
-2025/05/04 09:12:47 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) addr=localhost:36341 broker=seed_0 err=EOF
-2025/05/04 09:12:47 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) addr=localhost:36341 broker=seed_0 err=EOF
-2025/05/04 09:12:47 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) addr=localhost:36341 broker=seed_0 err=EOF
-2025/05/04 09:12:48 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) addr=localhost:36341 broker=seed_0 err=EOF
-2025/05/04 09:12:48 INFO metadata update triggered why="re-updating metadata due to err: broker closed the connection immediately after a request was issued, which happens when SASL is required but not provided: is SASL missing?"
-2025/05/04 09:12:48 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) addr=localhost:36341 broker=seed_0 err=EOF
-2025/05/04 09:12:49 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) addr=localhost:36341 broker=seed_0 err=EOF
-2025/05/04 09:12:49 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) addr=localhost:36341 broker=seed_0 err=EOF
-2025/05/04 09:12:50 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) addr=localhost:36341 broker=seed_0 err=EOF
-2025/05/04 09:12:51 INFO metadata update triggered why="re-updating metadata due to err: broker closed the connection immediately after a request was issued, which happens when SASL is required but not provided: is SASL missing?"
-2025/05/04 09:12:51 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) addr=localhost:36341 broker=seed_0 err=EOF
-2025/05/04 09:12:51 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) addr=localhost:36341 broker=seed_0 err=EOF
-2025/05/04 09:12:51 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) addr=localhost:36341 broker=seed_0 err=EOF
-2025/05/04 09:12:53 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) addr=localhost:36341 broker=seed_0 err=EOF
-2025/05/04 09:12:54 INFO metadata update triggered why="re-updating metadata due to err: broker closed the connection immediately after a request was issued, which happens when SASL is required but not provided: is SASL missing?"
-2025/05/04 09:12:54 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) addr=localhost:36341 broker=seed_0 err=EOF
-2025/05/04 09:12:54 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) addr=localhost:36341 broker=seed_0 err=EOF
-2025/05/04 09:12:55 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) addr=localhost:36341 broker=seed_0 err=EOF
-2025/05/04 09:12:55 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) addr=localhost:36341 broker=seed_0 err=EOF
-2025/05/04 09:12:57 INFO metadata update triggered why="re-updating metadata due to err: broker closed the connection immediately after a request was issued, which happens when SASL is required but not provided: is SASL missing?"
-2025/05/04 09:12:57 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) addr=localhost:36341 broker=seed_0 err=EOF
-2025/05/04 09:12:57 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) addr=localhost:36341 broker=seed_0 err=EOF
-2025/05/04 09:12:58 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) addr=localhost:36341 broker=seed_0 err=EOF
-2025/05/04 09:12:58 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) addr=localhost:36341 broker=seed_0 err=EOF
-2025/05/04 09:13:00 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) addr=localhost:36341 broker=seed_0 err=EOF
-2025/05/04 09:13:00 INFO metadata update triggered why="re-updating metadata due to err: broker closed the connection immediately after a request was issued, which happens when SASL is required but not provided: is SASL missing?"
-2025/05/04 09:13:00 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) addr=localhost:36341 broker=seed_0 err=EOF
-2025/05/04 09:13:01 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) addr=localhost:36341 broker=seed_0 err=EOF
-2025/05/04 09:13:01 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) addr=localhost:36341 broker=seed_0 err=EOF
-2025/05/04 09:13:03 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) addr=localhost:36341 broker=seed_0 err=EOF
-2025/05/04 09:13:04 INFO metadata update triggered why="re-updating metadata due to err: broker closed the connection immediately after a request was issued, which happens when SASL is required but not provided: is SASL missing?"
-2025/05/04 09:13:04 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) addr=localhost:36341 broker=seed_0 err=EOF
-2025/05/04 09:13:04 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) addr=localhost:36341 broker=seed_0 err=EOF
-2025/05/04 09:13:04 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) addr=localhost:36341 broker=seed_0 err=EOF
-2025/05/04 09:13:05 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) addr=localhost:36341 broker=seed_0 err=EOF
-2025/05/04 09:13:07 INFO metadata update triggered why="re-updating metadata due to err: broker closed the connection immediately after a request was issued, which happens when SASL is required but not provided: is SASL missing?"
-2025/05/04 09:13:07 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) addr=localhost:36341 broker=seed_0 err=EOF
-2025/05/04 09:13:07 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) addr=localhost:36341 broker=seed_0 err=EOF
-2025/05/04 09:13:08 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) addr=localhost:36341 broker=seed_0 err=EOF
-2025/05/04 09:13:08 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) addr=localhost:36341 broker=seed_0 err=EOF
-2025/05/04 09:13:10 INFO metadata update triggered why="re-updating metadata due to err: broker closed the connection immediately after a request was issued, which happens when SASL is required but not provided: is SASL missing?"
-2025/05/04 09:13:10 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) addr=localhost:36341 broker=seed_0 err=EOF
-2025/05/04 09:13:10 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) addr=localhost:36341 broker=seed_0 err=EOF
-2025/05/04 09:13:11 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) addr=localhost:36341 broker=seed_0 err=EOF
-2025/05/04 09:13:13 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) addr=localhost:36341 broker=seed_0 err=EOF
-2025/05/04 09:13:13 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) addr=localhost:36341 broker=seed_0 err=EOF
-2025/05/04 09:13:13 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) addr=localhost:36341 broker=seed_0 err=EOF
-2025/05/04 09:13:13 INFO metadata update triggered why="re-updating metadata due to err: broker closed the connection immediately after a request was issued, which happens when SASL is required but not provided: is SASL missing?"
-2025/05/04 09:13:13 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) addr=localhost:36341 broker=seed_0 err=EOF
-2025/05/04 09:13:14 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) addr=localhost:36341 broker=seed_0 err=EOF
-2025/05/04 09:13:14 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) addr=localhost:36341 broker=seed_0 err=EOF
-2025/05/04 09:13:14 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) addr=localhost:36341 broker=seed_0 err=EOF
-2025/05/04 09:13:15 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) addr=localhost:36341 broker=seed_0 err=EOF
-2025/05/04 09:13:17 INFO metadata update triggered why="re-updating metadata due to err: broker closed the connection immediately after a request was issued, which happens when SASL is required but not provided: is SASL missing?"
-2025/05/04 09:13:17 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) addr=localhost:36341 broker=seed_0 err=EOF
-2025/05/04 09:13:17 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) addr=localhost:36341 broker=seed_0 err=EOF
-2025/05/04 09:13:17 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) addr=localhost:36341 broker=seed_0 err=EOF
-2025/05/04 09:13:17 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) addr=localhost:36341 broker=seed_0 err=EOF
-2025/05/04 09:13:19 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) addr=localhost:36341 broker=seed_0 err=EOF
-2025/05/04 09:13:20 INFO metadata update triggered why="re-updating metadata due to err: broker closed the connection immediately after a request was issued, which happens when SASL is required but not provided: is SASL missing?"
-2025/05/04 09:13:20 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) addr=localhost:36341 broker=seed_0 err=EOF
-2025/05/04 09:13:20 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) addr=localhost:36341 broker=seed_0 err=EOF
-2025/05/04 09:13:21 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) addr=localhost:36341 broker=seed_0 err=EOF
-2025/05/04 09:13:22 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) addr=localhost:36341 broker=seed_0 err=EOF
-2025/05/04 09:13:23 INFO metadata update triggered why="re-updating metadata due to err: broker closed the connection immediately after a request was issued, which happens when SASL is required but not provided: is SASL missing?"
-2025/05/04 09:13:23 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) addr=localhost:36341 broker=seed_0 err=EOF
-2025/05/04 09:13:23 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) addr=localhost:36341 broker=seed_0 err=EOF
-2025/05/04 09:13:24 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) addr=localhost:36341 broker=seed_0 err=EOF
-2025/05/04 09:13:24 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) addr=localhost:36341 broker=seed_0 err=EOF
-2025/05/04 09:13:26 INFO metadata update triggered why="re-updating metadata due to err: broker closed the connection immediately after a request was issued, which happens when SASL is required but not provided: is SASL missing?"
-2025/05/04 09:13:26 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) addr=localhost:36341 broker=seed_0 err=EOF
-2025/05/04 09:13:27 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) addr=localhost:36341 broker=seed_0 err=EOF
-2025/05/04 09:13:27 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) addr=localhost:36341 broker=seed_0 err=EOF
-2025/05/04 09:13:27 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) addr=localhost:36341 broker=seed_0 err=EOF
-2025/05/04 09:13:29 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) addr=localhost:36341 broker=seed_0 err=EOF
-2025/05/04 09:13:30 INFO metadata update triggered why="re-updating metadata due to err: broker closed the connection immediately after a request was issued, which happens when SASL is required but not provided: is SASL missing?"
-2025/05/04 09:13:30 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) addr=localhost:36341 broker=seed_0 err=EOF
-2025/05/04 09:13:30 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) addr=localhost:36341 broker=seed_0 err=EOF
-2025/05/04 09:13:30 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) addr=localhost:36341 broker=seed_0 err=EOF
-2025/05/04 09:13:32 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) addr=localhost:36341 broker=seed_0 err=EOF
-2025/05/04 09:13:33 INFO metadata update triggered why="re-updating metadata due to err: broker closed the connection immediately after a request was issued, which happens when SASL is required but not provided: is SASL missing?"
-2025/05/04 09:13:33 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) addr=localhost:36341 broker=seed_0 err=EOF
-2025/05/04 09:13:33 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) addr=localhost:36341 broker=seed_0 err=EOF
-2025/05/04 09:13:34 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) addr=localhost:36341 broker=seed_0 err=EOF
-2025/05/04 09:13:34 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) addr=localhost:36341 broker=seed_0 err=EOF
-2025/05/04 09:13:36 INFO metadata update triggered why="re-updating metadata due to err: broker closed the connection immediately after a request was issued, which happens when SASL is required but not provided: is SASL missing?"
-2025/05/04 09:13:36 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) addr=localhost:36341 broker=seed_0 err=EOF
-2025/05/04 09:13:36 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) addr=localhost:36341 broker=seed_0 err=EOF
-2025/05/04 09:13:37 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) addr=localhost:36341 broker=seed_0 err=EOF
-2025/05/04 09:13:37 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) addr=localhost:36341 broker=seed_0 err=EOF
-2025/05/04 09:13:39 INFO metadata update triggered why="re-updating metadata due to err: broker closed the connection immediately after a request was issued, which happens when SASL is required but not provided: is SASL missing?"
-2025/05/04 09:13:39 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) addr=localhost:36341 broker=seed_0 err=EOF
-2025/05/04 09:13:39 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) addr=localhost:36341 broker=seed_0 err=EOF
-2025/05/04 09:13:40 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) addr=localhost:36341 broker=seed_0 err=EOF
-2025/05/04 09:13:40 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) addr=localhost:36341 broker=seed_0 err=EOF
-2025/05/04 09:13:42 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) addr=localhost:36341 broker=seed_0 err=EOF
-    example_test.go:81: closing client after 57.632228455s
-    lifecycle.go:109: 🐳 Stopping container: 8c10383322cc
-    lifecycle.go:115: ✅ Container stopped: 8c10383322cc
-    lifecycle.go:121: 🐳 Terminating container: 8c10383322cc
-    lifecycle.go:127: 🚫 Container terminated: 8c10383322cc
---- PASS: TestMinimal (60.21s)
+2025/05/06 08:22:55 INFO assigning partitions why="invalidating all assignments in LeaveGroup" how="unassigning everything" input=""
+2025/05/06 08:22:55 INFO leaving group group=foo-bar member_id=""
+2025/05/06 08:22:55 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) req=FindCoordinator addr=localhost:36357 broker=seed_0 err=EOF
+2025/05/06 08:22:56 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) req=Metadata addr=localhost:36357 broker=seed_0 err=EOF
+2025/05/06 08:22:56 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) req=FindCoordinator addr=localhost:36357 broker=seed_0 err=EOF
+2025/05/06 08:22:56 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) req=FindCoordinator addr=localhost:36357 broker=seed_0 err=EOF
+2025/05/06 08:22:56 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) req=Metadata addr=localhost:36357 broker=seed_0 err=EOF
+2025/05/06 08:22:56 INFO metadata update triggered why="re-updating metadata due to err: broker closed the connection immediately after a request was issued, which happens when SASL is required but not provided: is SASL missing?"
+2025/05/06 08:22:56 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) req=Metadata addr=localhost:36357 broker=seed_0 err=EOF
+2025/05/06 08:22:57 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) req=Metadata addr=localhost:36357 broker=seed_0 err=EOF
+2025/05/06 08:22:57 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) req=Metadata addr=localhost:36357 broker=seed_0 err=EOF
+2025/05/06 08:22:57 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) req=FindCoordinator addr=localhost:36357 broker=seed_0 err=EOF
+2025/05/06 08:22:58 INFO metadata update triggered why="re-updating metadata due to err: broker closed the connection immediately after a request was issued, which happens when SASL is required but not provided: is SASL missing?"
+2025/05/06 08:22:58 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) req=Metadata addr=localhost:36357 broker=seed_0 err=EOF
+2025/05/06 08:22:58 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) req=Metadata addr=localhost:36357 broker=seed_0 err=EOF
+2025/05/06 08:22:58 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) req=Metadata addr=localhost:36357 broker=seed_0 err=EOF
+2025/05/06 08:22:59 INFO metadata update triggered why="re-updating metadata due to err: broker closed the connection immediately after a request was issued, which happens when SASL is required but not provided: is SASL missing?"
+2025/05/06 08:22:59 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) req=Metadata addr=localhost:36357 broker=seed_0 err=EOF
+2025/05/06 08:22:59 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) req=FindCoordinator addr=localhost:36357 broker=seed_0 err=EOF
+2025/05/06 08:23:00 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) req=Metadata addr=localhost:36357 broker=seed_0 err=EOF
+2025/05/06 08:23:00 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) req=Metadata addr=localhost:36357 broker=seed_0 err=EOF
+2025/05/06 08:23:02 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) req=FindCoordinator addr=localhost:36357 broker=seed_0 err=EOF
+2025/05/06 08:23:02 INFO metadata update triggered why="re-updating metadata due to err: broker closed the connection immediately after a request was issued, which happens when SASL is required but not provided: is SASL missing?"
+2025/05/06 08:23:02 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) req=Metadata addr=localhost:36357 broker=seed_0 err=EOF
+2025/05/06 08:23:03 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) req=Metadata addr=localhost:36357 broker=seed_0 err=EOF
+2025/05/06 08:23:03 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) req=Metadata addr=localhost:36357 broker=seed_0 err=EOF
+2025/05/06 08:23:04 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) req=FindCoordinator addr=localhost:36357 broker=seed_0 err=EOF
+2025/05/06 08:23:06 INFO metadata update triggered why="re-updating metadata due to err: broker closed the connection immediately after a request was issued, which happens when SASL is required but not provided: is SASL missing?"
+2025/05/06 08:23:06 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) req=Metadata addr=localhost:36357 broker=seed_0 err=EOF
+2025/05/06 08:23:06 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) req=Metadata addr=localhost:36357 broker=seed_0 err=EOF
+2025/05/06 08:23:06 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) req=Metadata addr=localhost:36357 broker=seed_0 err=EOF
+2025/05/06 08:23:07 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) req=FindCoordinator addr=localhost:36357 broker=seed_0 err=EOF
+2025/05/06 08:23:09 INFO metadata update triggered why="re-updating metadata due to err: broker closed the connection immediately after a request was issued, which happens when SASL is required but not provided: is SASL missing?"
+2025/05/06 08:23:09 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) req=Metadata addr=localhost:36357 broker=seed_0 err=EOF
+2025/05/06 08:23:09 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) req=Metadata addr=localhost:36357 broker=seed_0 err=EOF
+2025/05/06 08:23:09 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) req=FindCoordinator addr=localhost:36357 broker=seed_0 err=EOF
+2025/05/06 08:23:10 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) req=Metadata addr=localhost:36357 broker=seed_0 err=EOF
+2025/05/06 08:23:12 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) req=FindCoordinator addr=localhost:36357 broker=seed_0 err=EOF
+2025/05/06 08:23:12 INFO metadata update triggered why="re-updating metadata due to err: broker closed the connection immediately after a request was issued, which happens when SASL is required but not provided: is SASL missing?"
+2025/05/06 08:23:12 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) req=Metadata addr=localhost:36357 broker=seed_0 err=EOF
+2025/05/06 08:23:12 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) req=Metadata addr=localhost:36357 broker=seed_0 err=EOF
+2025/05/06 08:23:13 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) req=Metadata addr=localhost:36357 broker=seed_0 err=EOF
+2025/05/06 08:23:14 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) req=FindCoordinator addr=localhost:36357 broker=seed_0 err=EOF
+2025/05/06 08:23:15 INFO metadata update triggered why="re-updating metadata due to err: broker closed the connection immediately after a request was issued, which happens when SASL is required but not provided: is SASL missing?"
+2025/05/06 08:23:15 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) req=Metadata addr=localhost:36357 broker=seed_0 err=EOF
+2025/05/06 08:23:16 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) req=Metadata addr=localhost:36357 broker=seed_0 err=EOF
+2025/05/06 08:23:16 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) req=Metadata addr=localhost:36357 broker=seed_0 err=EOF
+2025/05/06 08:23:17 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) req=FindCoordinator addr=localhost:36357 broker=seed_0 err=EOF
+2025/05/06 08:23:19 INFO metadata update triggered why="re-updating metadata due to err: broker closed the connection immediately after a request was issued, which happens when SASL is required but not provided: is SASL missing?"
+2025/05/06 08:23:19 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) req=Metadata addr=localhost:36357 broker=seed_0 err=EOF
+2025/05/06 08:23:19 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) req=Metadata addr=localhost:36357 broker=seed_0 err=EOF
+2025/05/06 08:23:19 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) req=Metadata addr=localhost:36357 broker=seed_0 err=EOF
+2025/05/06 08:23:19 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) req=FindCoordinator addr=localhost:36357 broker=seed_0 err=EOF
+2025/05/06 08:23:22 INFO metadata update triggered why="re-updating metadata due to err: broker closed the connection immediately after a request was issued, which happens when SASL is required but not provided: is SASL missing?"
+2025/05/06 08:23:22 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) req=Metadata addr=localhost:36357 broker=seed_0 err=EOF
+2025/05/06 08:23:22 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) req=FindCoordinator addr=localhost:36357 broker=seed_0 err=EOF
+2025/05/06 08:23:22 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) req=Metadata addr=localhost:36357 broker=seed_0 err=EOF
+2025/05/06 08:23:23 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) req=Metadata addr=localhost:36357 broker=seed_0 err=EOF
+2025/05/06 08:23:24 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) req=FindCoordinator addr=localhost:36357 broker=seed_0 err=EOF
+2025/05/06 08:23:25 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) req=FindCoordinator addr=localhost:36357 broker=seed_0 err=EOF
+2025/05/06 08:23:25 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) req=FindCoordinator addr=localhost:36357 broker=seed_0 err=EOF
+2025/05/06 08:23:25 INFO metadata update triggered why="re-updating metadata due to err: broker closed the connection immediately after a request was issued, which happens when SASL is required but not provided: is SASL missing?"
+2025/05/06 08:23:25 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) req=Metadata addr=localhost:36357 broker=seed_0 err=EOF
+2025/05/06 08:23:25 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) req=FindCoordinator addr=localhost:36357 broker=seed_0 err=EOF
+2025/05/06 08:23:25 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) req=Metadata addr=localhost:36357 broker=seed_0 err=EOF
+2025/05/06 08:23:26 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) req=Metadata addr=localhost:36357 broker=seed_0 err=EOF
+2025/05/06 08:23:26 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) req=FindCoordinator addr=localhost:36357 broker=seed_0 err=EOF
+2025/05/06 08:23:28 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) req=FindCoordinator addr=localhost:36357 broker=seed_0 err=EOF
+2025/05/06 08:23:28 INFO metadata update triggered why="re-updating metadata due to err: broker closed the connection immediately after a request was issued, which happens when SASL is required but not provided: is SASL missing?"
+2025/05/06 08:23:28 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) req=Metadata addr=localhost:36357 broker=seed_0 err=EOF
+2025/05/06 08:23:29 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) req=Metadata addr=localhost:36357 broker=seed_0 err=EOF
+2025/05/06 08:23:29 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) req=Metadata addr=localhost:36357 broker=seed_0 err=EOF
+2025/05/06 08:23:30 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) req=FindCoordinator addr=localhost:36357 broker=seed_0 err=EOF
+2025/05/06 08:23:32 INFO metadata update triggered why="re-updating metadata due to err: broker closed the connection immediately after a request was issued, which happens when SASL is required but not provided: is SASL missing?"
+2025/05/06 08:23:32 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) req=Metadata addr=localhost:36357 broker=seed_0 err=EOF
+2025/05/06 08:23:32 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) req=Metadata addr=localhost:36357 broker=seed_0 err=EOF
+2025/05/06 08:23:32 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) req=Metadata addr=localhost:36357 broker=seed_0 err=EOF
+2025/05/06 08:23:33 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) req=FindCoordinator addr=localhost:36357 broker=seed_0 err=EOF
+2025/05/06 08:23:35 INFO metadata update triggered why="re-updating metadata due to err: broker closed the connection immediately after a request was issued, which happens when SASL is required but not provided: is SASL missing?"
+2025/05/06 08:23:35 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) req=Metadata addr=localhost:36357 broker=seed_0 err=EOF
+2025/05/06 08:23:35 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) req=Metadata addr=localhost:36357 broker=seed_0 err=EOF
+2025/05/06 08:23:35 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) req=FindCoordinator addr=localhost:36357 broker=seed_0 err=EOF
+2025/05/06 08:23:36 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) req=Metadata addr=localhost:36357 broker=seed_0 err=EOF
+2025/05/06 08:23:38 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) req=FindCoordinator addr=localhost:36357 broker=seed_0 err=EOF
+2025/05/06 08:23:38 INFO metadata update triggered why="re-updating metadata due to err: broker closed the connection immediately after a request was issued, which happens when SASL is required but not provided: is SASL missing?"
+2025/05/06 08:23:38 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) req=Metadata addr=localhost:36357 broker=seed_0 err=EOF
+2025/05/06 08:23:39 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) req=Metadata addr=localhost:36357 broker=seed_0 err=EOF
+2025/05/06 08:23:39 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) req=Metadata addr=localhost:36357 broker=seed_0 err=EOF
+2025/05/06 08:23:40 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) req=FindCoordinator addr=localhost:36357 broker=seed_0 err=EOF
+2025/05/06 08:23:42 INFO metadata update triggered why="re-updating metadata due to err: broker closed the connection immediately after a request was issued, which happens when SASL is required but not provided: is SASL missing?"
+2025/05/06 08:23:42 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) req=Metadata addr=localhost:36357 broker=seed_0 err=EOF
+2025/05/06 08:23:42 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) req=Metadata addr=localhost:36357 broker=seed_0 err=EOF
+2025/05/06 08:23:42 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) req=Metadata addr=localhost:36357 broker=seed_0 err=EOF
+2025/05/06 08:23:43 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) req=FindCoordinator addr=localhost:36357 broker=seed_0 err=EOF
+2025/05/06 08:23:45 INFO metadata update triggered why="re-updating metadata due to err: broker closed the connection immediately after a request was issued, which happens when SASL is required but not provided: is SASL missing?"
+2025/05/06 08:23:45 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) req=Metadata addr=localhost:36357 broker=seed_0 err=EOF
+2025/05/06 08:23:45 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) req=Metadata addr=localhost:36357 broker=seed_0 err=EOF
+2025/05/06 08:23:45 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) req=FindCoordinator addr=localhost:36357 broker=seed_0 err=EOF
+2025/05/06 08:23:46 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) req=Metadata addr=localhost:36357 broker=seed_0 err=EOF
+2025/05/06 08:23:48 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) req=FindCoordinator addr=localhost:36357 broker=seed_0 err=EOF
+2025/05/06 08:23:48 INFO metadata update triggered why="re-updating metadata due to err: broker closed the connection immediately after a request was issued, which happens when SASL is required but not provided: is SASL missing?"
+2025/05/06 08:23:48 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) req=Metadata addr=localhost:36357 broker=seed_0 err=EOF
+2025/05/06 08:23:49 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) req=Metadata addr=localhost:36357 broker=seed_0 err=EOF
+2025/05/06 08:23:49 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) req=Metadata addr=localhost:36357 broker=seed_0 err=EOF
+2025/05/06 08:23:50 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) req=FindCoordinator addr=localhost:36357 broker=seed_0 err=EOF
+2025/05/06 08:23:51 INFO metadata update triggered why="re-updating metadata due to err: broker closed the connection immediately after a request was issued, which happens when SASL is required but not provided: is SASL missing?"
+2025/05/06 08:23:51 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) req=Metadata addr=localhost:36357 broker=seed_0 err=EOF
+2025/05/06 08:23:52 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) req=Metadata addr=localhost:36357 broker=seed_0 err=EOF
+2025/05/06 08:23:52 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) req=Metadata addr=localhost:36357 broker=seed_0 err=EOF
+2025/05/06 08:23:53 WARN read from broker errored, killing connection after 0 successful responses (is SASL missing?) req=FindCoordinator addr=localhost:36357 broker=seed_0 err=EOF
+    example_test.go:81: closing client after 57.637425664s
+    lifecycle.go:109: 🐳 Stopping container: 9c77c6e410fc
+    lifecycle.go:115: ✅ Container stopped: 9c77c6e410fc
+    lifecycle.go:121: 🐳 Terminating container: 9c77c6e410fc
+    lifecycle.go:127: 🚫 Container terminated: 9c77c6e410fc
+--- PASS: TestMinimal (60.48s)
 PASS
-ok  	github.com/peczenyj/kafka-franz-example	60.267s
+ok  	github.com/peczenyj/kafka-franz-example	60.534s
